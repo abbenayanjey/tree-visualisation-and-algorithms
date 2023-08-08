@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/binarysearchtree"
+            android:layout_width="226dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:fontFamily="@font/google_sans_regular"
+            android:textSize="25dp"
+            android:text="Welcome"
+            android:textAppearance="@style/textStyleTitles" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:cardMaxElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="308dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/psuedocode"
+                        android:layout_width="104dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="Topics:"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAppearance="@style/pseudocode_" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/binaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_bt_light_blue"
+                        android:padding="5dp"
+                        android:paddingStart="30dp"
+                        android:text="Binary Trees"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAlignment="textStart"
+                        android:drawableRight="@drawable/arrow"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+
+                        android:textAppearance="@style/topicslist">
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/naryButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_bt_light_blue"
+                        android:padding="5dp"
+                        android:paddingStart="30dp"
+                        android:text="N-ary Trees"
+                        android:drawableRight="@drawable/arrow"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/topicslist">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bstButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_bt_light_blue"
+                        android:padding="5dp"
+                        android:paddingStart="30dp"
+                        android:drawableRight="@drawable/arrow"
+                        android:text="Binary Search Trees"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/topicslist">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/avlButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_bt_light_blue"
+                        android:padding="5dp"
+                        android:paddingStart="30dp"
+                        android:text="AVL Trees"
+                        android:drawableRight="@drawable/arrow"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/topicslist">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/listButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_bt_light_blue"
+                        android:padding="5dp"
+                        android:paddingStart="30dp"
+                        android:text="Linear List to BST"
+                        android:drawableRight="@drawable/arrow"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:textAppearance="@style/topicslist">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
